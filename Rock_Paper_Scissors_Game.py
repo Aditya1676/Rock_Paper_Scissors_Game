@@ -4,7 +4,7 @@ print("=== Rock Paper Scissors Game ===")
 
 choices = ["rock", "paper", "scissors"]
 
-while True:   # Game loop
+while True:
     print("\n--- New Round ---")
     user = input("Enter rock, paper, or scissors (or 'q' to quit): ").lower()
 
@@ -19,7 +19,6 @@ while True:   # Game loop
     computer = random.choice(choices)
     print(f"Computer chose: {computer}")
 
-    # Determine the winner
     if user == computer:
         print("Result: It's a tie!")
     elif (user == "rock" and computer == "scissors") or \
@@ -28,3 +27,4 @@ while True:   # Game loop
         print("Result: You win!")
     else:
         print("Result: You lose!")
+
